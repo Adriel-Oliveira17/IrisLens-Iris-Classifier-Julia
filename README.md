@@ -8,20 +8,6 @@ Pipeline completo de Machine Learning desenvolvido em Julia para a classificaç�
 
 ---
 
-## Sumário
-
-- [Visão Geral](#visão-geral)
-- [Tecnologias e Bibliotecas](#tecnologias-e-bibliotecas)
-- [Estrutura do Pipeline](#estrutura-do-pipeline)
-- [Desempenho e Métricas](#desempenho-e-métricas)
-- [Inferência em Novas Amostras](#inferência-em-novas-amostras)
-- [Instalação e Execução](#instalação-e-execução)
-- [Estrutura do Repositório](#estrutura-do-repositório)
-- [Como Enviar para o GitHub](#como-enviar-para-o-github)
-- [Licença](#licença)
-
----
-
 ## Visão Geral
 
 Este repositório serve como referência prática de boas práticas de Data Science e Machine Learning na linguagem Julia. Ele aborda:
