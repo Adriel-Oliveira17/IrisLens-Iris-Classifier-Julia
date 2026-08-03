@@ -2,7 +2,6 @@
 
 ![Julia](https://img.shields.io/badge/Julia-1.11.5-9558B2?style=flat-square&logo=julia&logoColor=white)
 ![MLJ](https://img.shields.io/badge/Framework-MLJ.jl-389826?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
 Pipeline completo de Machine Learning desenvolvido em Julia para a classificação automatizada das três espécies do dataset Iris (*setosa*, *versicolor* e *virginica*). O projeto utiliza a biblioteca MLJ.jl e algoritmos de Árvores de Decisão, cobrindo todo o ciclo desde o pré-processamento estratificado até o cálculo de métricas de avaliação e inferência em lote.
 
