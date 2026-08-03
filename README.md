@@ -1,1 +1,43 @@
+# Classificação de Espécies de Íris com MLJ em Julia
 
+![Julia](https://img.shields.io/badge/Julia-1.11.5-9558B2?style=flat-square&logo=julia&logoColor=white)
+![MLJ](https://img.shields.io/badge/Framework-MLJ.jl-389826?style=flat-square)
+![DataFrames](https://img.shields.io/badge/Data-DataFrames.jl-1A659E?style=flat-square)
+![Random](https://img.shields.io/badge/Library-Random-444444?style=flat-square)
+
+Pipeline completo de Machine Learning desenvolvido em Julia para a classificação automatizada das três espécies do dataset Iris (*setosa*, *versicolor* e *virginica*). O projeto utiliza a biblioteca MLJ.jl e algoritmos de Árvores de Decisão, cobrindo todo o ciclo desde o pré-processamento estratificado até o cálculo de métricas de avaliação e inferência em lote.
+
+---
+
+## Visão Geral
+
+Este repositório serve como referência prática de boas práticas de Data Science e Machine Learning na linguagem Julia. Ele aborda:
+
+- Manipulação de dados estruturados com `DataFrames.jl`.
+- Particionamento estatisticamente controlado (divisão treino/teste estratificada).
+- Treinamento e ajuste de hiperparâmetros com `DecisionTree.jl` via interface `MLJ.jl`.
+- Controle de aleatoriedade e reproduzibilidade com o pacote nativo `Random`.
+- Implementação de métricas customizadas de avaliação por classe (Precisão, Recall e Acurácia Global)[cite: 1].
+
+---
+
+## Tecnologias e Bibliotecas
+
+| Tecnologias | Descrição / Função |
+| :--- | :--- |
+| **Julia 1.11.5** | Linguagem de alto desempenho para computação científica |
+| **MLJ.jl** | Framework unificado de Machine Learning em Julia |
+| **DataFrames.jl** | Estruturação e manipulação de conjuntos de dados |
+| **DecisionTree.jl** | Algoritmo de classificação baseado em Árvore de Decisão |
+| **Random** | Módulo nativo para controle de reproduzibilidade e números aleatórios |
+| **CategoricalArrays.jl** | Tratamento de variáveis categóricas |
+
+---
+
+## Estrutura do Pipeline
+
+```text
+[ Dataset Iris ] ---> [ Partitioning (80/20 Stratified) ] ---> [ DecisionTreeClassifier ]
+                                                                      |
+                                                                      v
+[ Inferência em Novas Amostras ] <--- [ Avaliação de Métricas ] <--- [ Predict Mode ]
